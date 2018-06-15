@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    overflow: hidden;
+}
+.all{
+    width: 100%;
+    background: url(../img/bj1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.all .newList{
+    width: 70%;
+    background-color: white;
+    padding-top: 30px;
+}
+.all .newList .row div:nth-child(1){
+    padding: 4%;
+}
+.all .newList .row div p{
+    padding:5%;
+}
+.all .newList .row div img{
+    width: 100%;
+}
+.all .newList .row div:nth-child(2){
+    width: 46%;
+    margin-top: 4%;
+    overflow: hidden;
+
+
+}
+h4{
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+@media screen and (max-width: 768px){
+    .all .newList{
+        width: 100%;
+    }
+    .all .newList .row div{
+        /*padding:2%;*/
+    }
+    .all .newList .row div:nth-child(2){
+        /*position: absolute;*/
+        margin-top: 0px;
+        width: 100%;
+
+
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .all .newList .row div:nth-child(2){
+        height: 146px;
+        overflow: hidden;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1600px){
+    .all .newList .row div:nth-child(2){
+        height: 176px;
+        overflow: hidden;
+    }
+}
