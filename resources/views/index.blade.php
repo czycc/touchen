@@ -151,21 +151,26 @@
                                     <span class="tm-white">News Classification</span>
                                 </h2>
                                 <p class="tm-text">
-                                    Shanghai Touch Digital Technology Co., Ltd. is committed to providing the most innovative multimedia display effects and the most unique creative design, using holographic imaging for new listings, exhibitions, city halls, planning galleries,
-                                    advertising planning, interactive ball screen, 360 Holographic, fog screen projection, ring screen movie, electronic sign-in and multi-touch technology to achieve the most shocking and dazzling effects.
+                                    Shanghai Touch Digital Technology Co., Ltd. is committed to providing the most
+                                    innovative multimedia display effects and the most unique creative design, using
+                                    holographic imaging for new listings, exhibitions, city halls, planning galleries,
+                                    advertising planning, interactive ball screen, 360 Holographic, fog screen
+                                    projection, ring screen movie, electronic sign-in and multi-touch technology to
+                                    achieve the most shocking and dazzling effects.
                                 </p>
                             </div>
                             @foreach($categories as $category)
-                            <div class="grid-item">
-                                <figure class="effect-ruby">
-                                    <img src="img/tm-img-0{{ $loop->index + 1 }}-tn.jpg" alt="Image" class="img-fluid tm-img">
-                                    <figcaption>
-                                        <h2 class="tm-figure-title">{{ $category->category }}</h2>
-                                        <p class="tm-figure-description">{{ $category->description }}</p>
-                                        <a href="{{ url('category') . '/' . $category->id }}">View more</a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                                <div class="grid-item">
+                                    <figure class="effect-ruby">
+                                        <img src="img/tm-img-0{{ $loop->index + 1 }}-tn.jpg" alt="Image"
+                                             class="img-fluid tm-img">
+                                        <figcaption>
+                                            <h2 class="tm-figure-title">{{ $category->category }}</h2>
+                                            <p class="tm-figure-description">{{ $category->description }}</p>
+                                            <a href="{{ url('category') . '/' . $category->id }}">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -181,11 +186,10 @@
                             <!-- Gallery Two pop up connected with JS code below -->
                             <div class="tm-img-gallery-info-container">
                                 <h2 class="tm-text-title tm-gallery-title">
-                                    <span class="tm-white">Second Gallery</span>
+                                    <span class="tm-white">Hot Topic</span>
                                 </h2>
                                 <p class="tm-text">
-										<span class="tm-white">Aenean nulla lorem, laoreet eu nibh et, lacinia ullamcorper dui. Nullam ut tincidunt odio. Morbi accumsan diam
-											vel enim cursus, in dapibus eros tristique.</span>
+										<span class="tm-white">Introduce the most popular product types in the market recently.</span>
                                 </p>
                             </div>
                             <div class="grid-item">
@@ -330,21 +334,21 @@
                                             <br/>
                                         </p>
                                         <!-- contact form -->
-                                        <form action="" method="post" class="tm-contact-form" onsubmit="" id="formData">
+                                        <form class="tm-contact-form" onsubmit="return formSubmit(this);" id="formData">
                                             <div class="form-group">
-                                                <input type="text" id="contact_name" name="contact_name"
+                                                <input type="text" id="contact_name" name="name"
                                                        class="form-control" placeholder="Name" required/>
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" id="contact_email" name="contact_email"
+                                                <input type="email" id="contact_email" name="email"
                                                        class="form-control" placeholder="Email" required/>
                                             </div>
                                             <div class="form-group">
-                                                <textarea id="contact_message" name="contact_message"
+                                                <textarea id="contact_message" name="message"
                                                           class="form-control" rows="5" placeholder="Your message"
                                                           required></textarea>
                                             </div>
-                                            <button type="submit" class="pull-xs-right tm-submit-btn">Send</button>
+                                            <button type="submit" class="pull-xs-right tm-submit-btn" id="submit">Send</button>
                                         </form>
                                     </div>
                                     <div
@@ -393,38 +397,32 @@
 <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
 
 <!-- 高德地图 -->
-<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9919b3652eba25eb2e2ef0839e3b8692"></script>
-<script type="text/javascript">
-    var map = new AMap.Map('map', {
-        resizeEnable: true,
-        zoom: 15,
-        center: [121.3620145118, 31.1360110791]
-    });
-    map.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.OverView'],
-        function () {
-            map.addControl(new AMap.ToolBar());
-            map.addControl(new AMap.Scale());
-            map.addControl(new AMap.OverView({isOpen: true}));
-        });
-    var marker = new AMap.Marker({
-        position: [121.3620145118, 31.1360110791]
-    });
-    marker.setMap(map);
+{{--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9919b3652eba25eb2e2ef0839e3b8692"></script>--}}
+{{--<script type="text/javascript">--}}
+    {{--var map = new AMap.Map('map', {--}}
+        {{--resizeEnable: true,--}}
+        {{--zoom: 15,--}}
+        {{--center: [121.3620145118, 31.1360110791]--}}
+    {{--});--}}
+    {{--map.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.OverView'],--}}
+        {{--function () {--}}
+            {{--map.addControl(new AMap.ToolBar());--}}
+            {{--map.addControl(new AMap.Scale());--}}
+            {{--map.addControl(new AMap.OverView({isOpen: true}));--}}
+        {{--});--}}
+    {{--var marker = new AMap.Marker({--}}
+        {{--position: [121.3620145118, 31.1360110791]--}}
+    {{--});--}}
+    {{--marker.setMap(map);--}}
 
-    function formSubmit() {
-        let formData= new FormData(document.getElementById('formData'))
-        $.ajax({
-            url: ""
-        })
-    }
-</script>
+{{--</script>--}}
 
 <!-- 谷歌地图 -->
 <!-- 将'YOUR_API_KEY'改成的谷歌的注册的key -->
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMiA5xn5hqZZGg9IvKcVeIwmcatw4y3o&callback=initMap"></script>
 <script>
     function initMap() {
-        var uluru = {lat: 121.3620145118, lng: 31.1360110791};
+        var uluru = {lat: 31.136, lng: 121.362};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
             center: uluru
@@ -434,7 +432,7 @@
             map: map
         });
     }
-</script> -->
+</script>
 
 <script>
     function adjustHeightOfPage(pageNo) {
@@ -514,6 +512,34 @@
         $('body').addClass('loaded');
 
     });
+
+    function formSubmit() {
+        let formData = new FormData(document.querySelector("#formData"));
+        // let formData= new FormData($('#formData')[0]);
+        // formData.append("CustomField", "This is some extra data");
+        console.log(formData.getAll('name'))
+        $.ajax({
+            url: "{{ url('api/email') }}",
+            type: "post",
+            headers: {
+                'X-CSRF-TOKEN': "{{ csrf_token() }}"
+            },
+            data: formData,
+            async: true,
+            cache: false,
+            contentType: false,
+            processData: false,
+        }).success(function (res) {
+            alert('提交信息成功');
+            $('submit').attr('disabled', 'disabled');
+            console.log(res)
+        }).fail(function (res) {
+            alert('提交信息失败');
+            console.log(res)
+        });
+        return false;
+    }
+
 </script>
 </body>
 </html>

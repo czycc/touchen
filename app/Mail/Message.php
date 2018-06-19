@@ -18,13 +18,13 @@ class Message extends Mailable
      */
     public $name;
     public $address;
-    public $message;
+    public $message1;
 
     public function __construct($name, $address, $message)
     {
         $this->name = $name;
         $this->address = $address;
-        $this->message = $message;
+        $this->message1 = $message;
     }
 
     /**

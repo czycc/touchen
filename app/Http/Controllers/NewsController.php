@@ -25,5 +25,6 @@ class NewsController extends Controller
     public function email(Request $request)
     {
         Mail::to('cc602155776@gmail.com')->send(new Message($request->name, $request->address, $request->message));
+        return 'true';
     }
 }
