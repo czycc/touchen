@@ -304,6 +304,13 @@
     <!-- .cd-hero-slider -->
     <footer class="tm-footer">
         <p class="tm-copyright-text">
+            友情链接:
+            <a href="https://www.nvidia.cn/page/home.html">NVIDIA</a> |
+            <a href="https://www.cgtrader.com/">CGTRADER</a> |
+            <a href="https://www.facebook.com/">FACEBOOK</a> |
+            <a href="https://www.facebook.com/">FACEBOOK</a> |
+            <a href="https://www.youtube.com/">YOUTUBE</a>
+            <br/>
             Copyright &copy; 2017 Touch World
         </p>
     </footer>
@@ -333,22 +340,5 @@
 <!-- 谷歌地图 将'YOUR_API_KEY'改成的谷歌的注册的key-->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMiA5xn5hqZZGg9IvKcVeIwmcatw4y3o&callback=initMap"></script>
 <script src="js/index.js"></script>
-
-<!-- 谷歌地图 -->
-<!-- 将'YOUR_API_KEY'改成的谷歌的注册的key -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMiA5xn5hqZZGg9IvKcVeIwmcatw4y3o&callback=initMap"></script>
-<script>
-    function initMap() {
-        var uluru = {lat: 31.136, lng: 121.362};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-</script>
 </body>
 </html>

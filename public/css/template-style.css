@@ -265,7 +265,6 @@ p.indent {
 }
 
 .tm-footer {
-  pointer-events: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -274,6 +273,16 @@ p.indent {
   z-index: 1001;
   padding: 0 11px 12px;
   text-align: center;
+}
+
+.tm-footer .tm-copyright-text {
+  color: white;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 5px 12px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .tm-social-icons-container {
@@ -612,16 +621,6 @@ textarea {
 
 #google-map {
   height: 430px;
-  width: 100%;
-}
-
-.tm-copyright-text {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  display: inline-block;
-  font-size: 1.8rem;
-  font-weight: 400;
-  padding: 5px 12px;
   width: 100%;
 }
 
