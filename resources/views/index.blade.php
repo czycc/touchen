@@ -304,20 +304,17 @@
     <footer class="tm-footer">
         <p class="tm-copyright-text">
             友情链接:
-            <a href="https://www.nvidia.cn/page/home.html">NVIDIA</a> |
-            <a href="https://www.cgtrader.com/">CGTRADER</a> |
-            <a href="https://www.facebook.com/">FACEBOOK</a> |
-            <a href="https://www.facebook.com/">FACEBOOK</a> |
-            <a href="https://www.youtube.com/">YOUTUBE</a>
+            <a href="https://www.nvidia.cn/page/home.html" target="_blank">NVIDIA</a> |
+            <a href="https://www.cgtrader.com/" target="_blank">CGTRADER</a> |
+            <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a> |
+            <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a> |
+            <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
             <br/>
             Copyright &copy; 2017 Touch World
         </p>
     </footer>
 </div>
 <!-- .cd-hero -->
-
-
-<!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
