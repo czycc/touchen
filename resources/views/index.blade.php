@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Shanghai TouchWorld Of Digital technology CO.,LTD,TouchWorld">
+    <meta name="keywords" content="multimedia display,Multimedia Display Systems,exhibition hall,city planning,city planning systems,exhibition hall plan,exhibition hall design,advertising planning,advertising planning ppt,interactive dome,interactive dome projection,360 holographic,360 holographic projection,360 holographic display,fog screen projection,stunning effect">
     <meta name="description" content="Shanghai touch field Digital Technology Co. Ltd. is committed to providing the most innovative multimedia display and creative design of the most unique, for the new listing, exhibition hall, museum, city planning, advertising planning and the use of holographic imaging, interactive dome, 360 holographic, fog screen projection, movie screen, electronic sign and multi touch technology to achieve the most shocking, stunning effect.">
     <title>Touch World</title>
     <!-- load stylesheets -->
