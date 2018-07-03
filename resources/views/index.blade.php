@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Shanghai TouchWorld Of Digital technology CO.,LTD,TouchWorld">
+    <meta name="description" content="Shanghai touch field Digital Technology Co. Ltd. is committed to providing the most innovative multimedia display and creative design of the most unique, for the new listing, exhibition hall, museum, city planning, advertising planning and the use of holographic imaging, interactive dome, 360 holographic, fog screen projection, movie screen, electronic sign and multi touch technology to achieve the most shocking, stunning effect.">
     <title>Touch World</title>
     <!-- load stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
@@ -17,7 +19,7 @@
     <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
-    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/template-style.min.css">
     <!-- Templatemo style -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,47 +28,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]
   -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <style>
-        #owl-pic {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #owl-pic .item {
-            display: block;
-        }
-
-        .selected .cd-full-width .owl-wrapper-outer {
-            /* position: absolute;
-            top: 30%;
-            bottom: 0;
-            margin: auto; */
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tm-footer {
-            pointer-events: none;
-        }
-
-    </style>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- jQuery (https://jquery.com/download/) -->
-    <script src="js/owl.carousel.js"></script>
-    <script>
-        $(function () {
-            $('#owl-pic').owlCarousel({
-                items: 1,
-                autoPlay: true,
-                itemsCustom: [1920, 1],
-
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -77,9 +38,10 @@
         <nav class="navbar">
             <div class="tm-navbar-bg">
                 <a class="navbar-brand text-uppercase" href="#">
-                    <img src="img/logo.png">Touch World</a>
-                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
-                        data-target="#tmNavbar">
+                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/logo.png" alt="touch-world-logo">
+                    <h1>Touch World</h1>
+                </a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
                     &#9776;
                 </button>
                 <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
@@ -93,7 +55,7 @@
                             <a class="nav-link" href="#0" data-no="2">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#0" data-no="3">Cases</a>
+                            <a class="nav-link" href="#0" data-no="3">Examples</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#0" data-no="4">About Us</a>
@@ -110,32 +72,15 @@
         <!-- Page 1 Home -->
         <li class="selected">
             <div class="cd-full-width" data-page-no="1">
-                <div style="width: 100%;height: 100%;" id="owl-pic" class="owl-carousel">
-                    <div class="video">
-                        <video
-                            autoplay
-                            controls
-                            loop
-                            poster="img/poster.jpg"
-                            controlslist="nodownload"
-                            style="width: 100%;height: 100%"
-                            src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/%E5%85%AC%E5%8F%B8%E5%AE%A3%E4%BC%A0%E7%89%87.mp4"></video>
-                    </div>
-                    <!-- <a class="item">
-                        <img src="img/tm-bg-1.jpeg">
-                    </a> -->
-                    <!-- <a class="item">
-                        <img src="img/tm-bg-2.jpeg">
-                    </a>
-                    <a class="item">
-                        <img src="img/tm-bg-3.jpeg">
-                    </a>
-                    <a class="item">
-                        <img src="img/tm-bg-4.jpeg">
-                    </a>
-                    <a class="item">
-                        <img src="img/tm-bg-5.jpeg">
-                    </a> -->
+                <div class="video">
+                    <video
+                        autoplay
+                        controls
+                        loop
+                        poster="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/poster.jpg"
+                        controlslist="nodownload"
+                        style="width: 100%;height: 100%"
+                        src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/%E5%85%AC%E5%8F%B8%E5%AE%A3%E4%BC%A0%E7%89%87.mp4"></video>
                 </div>
             </div>
         </li>
@@ -162,7 +107,7 @@
                             @foreach($categories as $category)
                                 <div class="grid-item">
                                     <figure class="effect-ruby">
-                                        <img src="img/tm-img-0{{ $loop->index + 1 }}-tn.jpg" alt="Image"
+                                        <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-0{{ $loop->index + 1 }}-tn.jpg" alt="Image"
                                              class="img-fluid tm-img">
                                         <figcaption>
                                             <h2 class="tm-figure-title">{{ $category->category }}</h2>
@@ -186,87 +131,84 @@
                             <!-- Gallery Two pop up connected with JS code below -->
                             <div class="tm-img-gallery-info-container">
                                 <h2 class="tm-text-title tm-gallery-title">
-                                    <span class="tm-white">Hot Topic</span>
+                                    <span class="tm-white">Second Gallery</span>
                                 </h2>
                                 <p class="tm-text">
-										<span class="tm-white">Introduce the most popular product types in the market recently.</span>
+                                    <span class="tm-white">Introduce the most popular product types in the market recently.</span>
                                 </p>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>One</span>
                                         </h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis
-                                            luctus risus.</p>
-                                        <a href="img/tm-img-05.jpg">View more</a>
+                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-05.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>Two</span>
                                         </h2>
                                         <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.
                                         </p>
-                                        <a href="img/tm-img-06.jpg">View more</a>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-06.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-07-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-07-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>Three</span>
                                         </h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis
-                                            luctus risus.</p>
-                                        <a href="img/tm-img-07.jpg">View more</a>
+                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-07.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-08-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-08-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>Four</span>
                                         </h2>
                                         <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.
                                         </p>
-                                        <a href="img/tm-img-08.jpg">View more</a>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-08.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-09-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-09-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>Five</span>
                                         </h2>
-                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis
-                                            luctus risus.</p>
-                                        <a href="img/tm-img-09.jpg">View more</a>
+                                        <p class="tm-figure-description">Suspendisse id placerat risus. Mauris quis luctus risus.</p>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-09.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="grid-item">
                                 <figure class="effect-ruby">
-                                    <img src="img/tm-img-10-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    <img src="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-10-tn.jpg" alt="Image" class="img-fluid tm-img">
                                     <figcaption>
                                         <h2 class="tm-figure-title">Picture
                                             <span>Six</span>
                                         </h2>
                                         <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.
                                         </p>
-                                        <a href="img/tm-img-10.jpg">View more</a>
+                                        <a href="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-img-10.jpg">View more</a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -282,27 +224,19 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="tm-flex">
-                                <div
-                                    class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding tm-white-box-margin-b">
+                                <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding tm-white-box-margin-b">
                                     <h2 class="tm-text-title">Shanghai TouchWorld Of Digital technology CO.,LTD</h2>
                                     <p class="tm-text indent">
-                                        Shanghai touch field Digital Technology Co. Ltd. is committed to providing the
-                                        most innovative multimedia display and creative
-                                        design of the most unique, for the new listing, exhibition hall, museum, city
-                                        planning, advertising planning and
-                                        the use of holographic imaging, interactive dome, 360 holographic, fog screen
-                                        projection, movie screen, electronic
+                                        Shanghai touch field Digital Technology Co. Ltd. is committed to providing the most innovative multimedia display and creative
+                                        design of the most unique, for the new listing, exhibition hall, museum, city planning, advertising planning and
+                                        the use of holographic imaging, interactive dome, 360 holographic, fog screen projection, movie screen, electronic
                                         sign and multi touch technology to achieve the most shocking, stunning effect.
                                         <br/>
                                     <p class="tm-text indent">
-                                        At the same time undertake a variety of professional 3D animation, Flash
-                                        animation, can provide different solutions according
-                                        to customer needs; Tongji University we have the most professional R & D team,
-                                        is committed to providing the
-                                        most advanced technology, we have many well-known brand to provide high-quality
-                                        service; the company is the concept
-                                        of respect for customers, understanding customers, continue to provide the
-                                        products and services that exceed
+                                        At the same time undertake a variety of professional 3D animation, Flash animation, can provide different solutions according
+                                        to customer needs; Tongji University we have the most professional R & D team, is committed to providing the
+                                        most advanced technology, we have many well-known brand to provide high-quality service; the company is the concept
+                                        of respect for customers, understanding customers, continue to provide the products and services that exceed
                                         customer expectations, so customers are always partners.
                                     </p>
                                     </p>
@@ -323,8 +257,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="tm-flex tm-contact-container">
-                                    <div
-                                        class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+                                    <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
                                         <h2 class="tm-contact-info">Contact Us</h2>
                                         <p class="tm-text">
                                             Tel：+021 35091225 / 35090001
@@ -386,7 +319,8 @@
 </div>
 
 <!-- load JS files -->
-
+<!-- load JS files -->
+<script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/tether.min.js"></script>
 <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
 <script src="js/bootstrap.min.js"></script>
@@ -394,28 +328,11 @@
 <script src="js/hero-slider-main.js"></script>
 <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
 <script src="js/jquery.magnific-popup.min.js"></script>
-<!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
-
 <!-- 高德地图 -->
-{{--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9919b3652eba25eb2e2ef0839e3b8692"></script>--}}
-{{--<script type="text/javascript">--}}
-    {{--var map = new AMap.Map('map', {--}}
-        {{--resizeEnable: true,--}}
-        {{--zoom: 15,--}}
-        {{--center: [121.3620145118, 31.1360110791]--}}
-    {{--});--}}
-    {{--map.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.OverView'],--}}
-        {{--function () {--}}
-            {{--map.addControl(new AMap.ToolBar());--}}
-            {{--map.addControl(new AMap.Scale());--}}
-            {{--map.addControl(new AMap.OverView({isOpen: true}));--}}
-        {{--});--}}
-    {{--var marker = new AMap.Marker({--}}
-        {{--position: [121.3620145118, 31.1360110791]--}}
-    {{--});--}}
-    {{--marker.setMap(map);--}}
-
-{{--</script>--}}
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9919b3652eba25eb2e2ef0839e3b8692"></script>
+<!-- 谷歌地图 将'YOUR_API_KEY'改成的谷歌的注册的key-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMiA5xn5hqZZGg9IvKcVeIwmcatw4y3o&callback=initMap"></script>
+<script src="js/index.js"></script>
 
 <!-- 谷歌地图 -->
 <!-- 将'YOUR_API_KEY'改成的谷歌的注册的key -->
@@ -432,114 +349,6 @@
             map: map
         });
     }
-</script>
-
-<script>
-    function adjustHeightOfPage(pageNo) {
-        var offset = 80;
-        var pageContentHeight = 0;
-        var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
-        if (pageType != undefined && pageType == "gallery") {
-            pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
-        }
-        else {
-            pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height();
-        }
-        if ($(window).width() >= 992) {
-            offset = 120;
-        }
-        else if ($(window).width() < 480) {
-            offset = 40;
-        }
-        // Get the page height
-        var totalPageHeight = 15 + $('.cd-slider-nav').height()
-            + pageContentHeight + offset
-            + $('.tm-footer').height();
-        // Adjust layout based on page height and window height
-        if (totalPageHeight > $(window).height()) {
-            $('.cd-hero-slider').addClass('small-screen');
-            $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
-        }
-        else {
-            $('.cd-hero-slider').removeClass('small-screen');
-            $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
-        }
-    }
-
-    /*
-            Everything is loaded including images.
-    */
-    $(window).load(function () {
-        adjustHeightOfPage(1); // Adjust page height
-        /* Gallery One pop up
-        -----------------------------------------*/
-        // $('.gallery-one').magnificPopup({
-        //     delegate: 'a', // child items selector, by clicking on it popup will open
-        //     type: 'image',
-        //     gallery:{enabled:true}
-        // });
-        /* Gallery Two pop up
-        -----------------------------------------*/
-        $('.gallery-two').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {enabled: true}
-        });
-        /* Gallery Three pop up
-        -----------------------------------------*/
-        $('.gallery-three').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {enabled: true}
-        });
-        /* Collapse menu after click
-        -----------------------------------------*/
-        $('#tmNavbar a').click(function () {
-            $('#tmNavbar').collapse('hide');
-            adjustHeightOfPage($(this).data("no")); // Adjust page height
-        });
-        /* Browser resized
-        -----------------------------------------*/
-        $(window).resize(function () {
-            var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
-            // wait 3 seconds
-            setTimeout(function () {
-                adjustHeightOfPage(currentPageNo);
-            }, 1000);
-        });
-
-        // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
-        $('body').addClass('loaded');
-
-    });
-
-    function formSubmit() {
-        let formData = new FormData(document.querySelector("#formData"));
-        // let formData= new FormData($('#formData')[0]);
-        // formData.append("CustomField", "This is some extra data");
-        console.log(formData.getAll('name'))
-        $.ajax({
-            url: "{{ url('api/email') }}",
-            type: "post",
-            headers: {
-                'X-CSRF-TOKEN': "{{ csrf_token() }}"
-            },
-            data: formData,
-            async: true,
-            cache: false,
-            contentType: false,
-            processData: false,
-        }).success(function (res) {
-            alert('提交信息成功');
-            $('submit').attr('disabled', 'disabled');
-            console.log(res)
-        }).fail(function (res) {
-            alert('提交信息失败');
-            console.log(res)
-        });
-        return false;
-    }
-
 </script>
 </body>
 </html>

@@ -1,9 +1,3 @@
-/*
-
-Upper Template
-
-
-*/
 
 body {
 	background-color: #DDDDDD;
@@ -102,7 +96,6 @@ a:focus {
 button:focus { outline: none; }
 
 .cd-slider-nav a.navbar-brand {
-	font-size: 2.5rem;
 	padding-top: 0;
 	padding-bottom: 0;
 	display: -ms-flexbox;
@@ -112,6 +105,10 @@ button:focus { outline: none; }
 	-ms-flex-pack: center;
 	    justify-content: center;
 	width: auto;
+	h1 {
+		font-size: 2.5rem;
+		margin: auto 0;
+	}
 }
 
 .cd-slider-nav a { text-transform: capitalize; }
@@ -145,12 +142,11 @@ button:focus { outline: none; }
 	list-style: none; 
 }
 
-.cd-hero-slider li:nth-of-type(1) { background-image: url(../img/home.jpg); }
-.cd-hero-slider li:nth-of-type(2) { background-image: url(../img/tm-bg-2.jpeg); }
-.cd-hero-slider li:nth-of-type(3) { background-image: url(../img/tm-bg-3.jpeg); }
-.cd-hero-slider li:nth-of-type(4) { background-image: url(../img/tm-bg-4.jpeg); }
-.cd-hero-slider li:nth-of-type(5) { background-image: url(../img/tm-bg-5.jpeg); }
-.cd-hero-slider li:nth-of-type(6) { background-image: url(../img/tm-bg-6.jpeg); }
+.cd-hero-slider li:nth-of-type(1) { background-image: url(https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/home.jpg); }
+.cd-hero-slider li:nth-of-type(2) { background-image: url(https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-bg-2.jpg); }
+.cd-hero-slider li:nth-of-type(3) { background-image: url(https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-bg-3.jpg); }
+.cd-hero-slider li:nth-of-type(4) { background-image: url(https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-bg-4.jpg); }
+.cd-hero-slider li:nth-of-type(5) { background-image: url(https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/tm-bg-5.jpg); }
 
 .tm-bg-white-translucent { background-color: rgba(255,255,255,0.8); }
 .tm-bg-white-translucent p { color: black; }
@@ -190,25 +186,26 @@ p.indent{
 /* footer */
 .tm-social-link {
 	background-color: rgba(255,255,255,0.40);
-    color: black;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
-    margin-right: 10px;
+	color: black;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 10px;
 }
 
 .tm-social-link:last-child { margin-right: 0; }
 
 .tm-footer {
+	pointer-events: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-    color: white;
-    z-index: 1001;
-    padding: 0 11px 12px;
+	color: white;
+	z-index: 1001;
+	padding: 0 11px 12px;
 	text-align: center;
 }
 
@@ -434,13 +431,6 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     font-weight: 400;
     padding: 5px 12px;
     width: 100%;
-}
-
-.tm-footer { padding: 50px 11px 20px; }
-.tm-footer-link { color: white; }
-.tm-footer-link:hover,
-.tm-footer-link:focus {
-	color: yellow;
 }
 
 .tm-home-fa {
@@ -801,7 +791,11 @@ figure.effect-ruby:hover img {
 		width: 160px;
 		height: 80px;
 	}
-	.cd-slider-nav a.navbar-brand { font-size: 3.5rem; }
+	.cd-slider-nav a.navbar-brand { 
+		h1{
+			font-size: 3.5rem;
+		} 
+	}
 
 	.tm-brand-icon { 
 		font-size: 4rem;
@@ -821,4 +815,19 @@ figure.effect-ruby:hover img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.tm-2-col-textbox-2 { margin-right: 15px; }
 	#google-map { height: 520px; }
+}
+
+// 用户自定义
+#owl-pic {
+	margin-left: auto;
+	margin-right: auto;
+}
+#owl-pic .item {
+	display: block;
+}
+.selected .cd-full-width .owl-wrapper-outer {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
