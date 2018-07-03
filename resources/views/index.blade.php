@@ -74,7 +74,6 @@
             <div class="cd-full-width" data-page-no="1">
                 <div class="video">
                     <video
-                        autoplay
                         controls
                         loop
                         poster="https://touchworld.oss-cn-shanghai.aliyuncs.com/touch/img/poster.jpg"
