@@ -105,7 +105,7 @@ class NewsController extends Controller
                 return $categories->all();
             })->rules('required');
             $form->image('image', '头图(比例450*300)')
-                ->move('images', uniqid() . '.jpg')->crop(450,300)->rules('required');
+                ->move('images', uniqid() . '.jpg')->fit(450,300)->rules('required');
             $form->editor('text', '文章内容')->rules('required');
             $form->display('created_at', 'Created At');
             $form->display('updated_at', 'Updated At');
